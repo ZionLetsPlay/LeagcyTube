@@ -120,6 +120,12 @@ body {
   margin-top: 4px;
 }
 
+.video-entry .info .meta img {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+}
+
 footer {
   text-align: center;
   padding: 12px;
