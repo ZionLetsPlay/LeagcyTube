@@ -2,71 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ROBLOX - Game Trailer - LegacyTube</title>
+  <title>LegacyTube - Home</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .video-player-container {
-      margin-bottom: 10px;
-    }
-    .rating-tools img {
-      width: 16px;
-      vertical-align: middle;
-    }
-    .rating-tools a {
-      margin-right: 10px;
-    }
-    .video-info-box {
-      display: flex;
-      gap: 20px;
-      margin: 15px 0;
-      font-size: 13px;
-    }
-    .video-info-box .info-left {
-      text-align: center;
-      width: 150px;
-    }
-    .video-info-box .info-left img:first-child {
-      width: 100px;
-      height: 75px;
-      display: block;
-      margin: 0 auto 5px;
-    }
-    .video-info-box .info-right input[type="text"] {
-      width: 100%;
-      margin-top: 4px;
-    }
-    .comments-responses .video-responses {
-      display: flex;
-      gap: 15px;
-      margin-top: 10px;
-    }
-    .comments-responses .responder {
-      text-align: center;
-      font-size: 12px;
-    }
-    .comments-responses .responder img {
-      width: 80px;
-      height: 60px;
-      display: block;
-      margin-bottom: 4px;
-    }
     .director-section {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+      justify-content: space-between;
+      margin-bottom: 20px;
     }
-    .director-section .item {
+    .director-item {
       width: 120px;
+      text-align: center;
       font-size: 11px;
     }
-    .director-section .item img {
-      width: 100%;
-      height: auto;
+    .director-item img {
+      width: 100px;
+      height: 75px;
       border: 1px solid #aaa;
     }
   </style>
 </head>
 <body>
+
   <div class="topbar">
     <div class="topbar-top">
       <a href="index.html">
@@ -78,7 +35,7 @@
       </form>
     </div>
     <div class="nav-buttons">
-      <img src="images/select-videos-button.png" alt="Videos" />
+      <img src="images/videos-button.png" alt="Videos" />
       <img src="images/categories-button.png" alt="Categories" />
       <img src="images/channels-button.png" alt="Channels" />
       <img src="images/community-button.png" alt="Community" />
@@ -89,99 +46,54 @@
   </div>
 
   <div class="container">
-    <div style="flex-grow: 1;">
-      <h2>ROBLOX - Game Trailer</h2>
-
-      <div class="video-player-container">
-        <video width="425" height="350" controls poster="images/RobloxVideoThumbnail.png">
-          <source src="videos/robloxgametrailer.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="rating-tools">
-        <span>Rate this video:</span>
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/heart.png" alt="Favorites Icon"> <a href="#">Save to Favorites</a>
-        <img src="images/groups.png" alt="Groups Icon"> <a href="#">Add to Groups</a>
-        <img src="images/email.png" alt="Share Icon"> <a href="#">Share Video</a>
-        <img src="images/post.png" alt="Post Icon"> <a href="#">Post Video</a>
-        <img src="images/flag-as-bad-stuff.png" alt="Flag Icon"> <a href="#">Flag as Inappropriate</a>
-      </div>
-
-      <div class="meta" style="font-size: 12px; margin-top: 5px;">
-        Views: <strong>133,218</strong> | Comments: <strong>0</strong> | Favorites: <strong>0</strong>
-      </div>
-
-      <div class="video-info-box">
-        <div class="info-left">
-          <img src="images/unknownthumbnail.jpg" alt="Shedletsky Icon">
-          <img src="images/subscribe-yellow-button.png" alt="Subscribe" style="width:100px;">
-          <div>to Shedletsky</div>
-        </div>
-        <div class="info-right">
-          <strong>Added:</strong> Nov 10, 2006<br>
-          <strong>From:</strong> <a href="#">Shedletsky</a><br>
-          <strong>Category:</strong> <a href="#">Video Games</a><br>
-          <strong>Tags:</strong> roblox trailer alpha gameplay<br>
-          <strong>URL:</strong><br>
-          <input type="text" value="https://www.leagcytube.com/watch?v=LTnMKjXEnMY" readonly><br>
-          <strong>Embed:</strong><br>
-          <input type="text" value="&lt;embed src='https://www.leagcytube.com/embed/LTnMKjXEnMY' width='425' height='350'&gt;" readonly>
-        </div>
-      </div>
-
-      <div class="comments-responses">
-        <h4>Comments &amp; Responses</h4>
-        <div class="video-responses">
-          <div class="responder">
-            <img src="images/unknownthumbnail.jpg" alt="Response">
-            <a href="#">VideoGuy123</a>
-          </div>
-          <div class="responder">
-            <img src="images/unknownthumbnail.jpg" alt="Response">
-            <a href="#">RetroFan</a>
-          </div>
-        </div>
-      </div>
+    <div id="sidebar">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
     </div>
 
-    <div id="sidebar">
+    <div id="main">
       <div class="section-title">Director Videos</div>
       <div class="director-section">
-        <div class="item">
-          <img src="images/unknownthumbnail.jpg" alt="Director 1">
-          <a href="#">God! Still The One</a><br>
-          01:04<br>
-          From: <a href="#">CBS</a>
+        <div class="director-item">
+          <img src="images/unknownthumbnail.jpg" alt="Director Video">
+          <a href="#">DramaStudio</a>
         </div>
-        <div class="item">
-          <img src="images/unknownthumbnail.jpg" alt="Director 2">
-          <a href="#">Piece of Mind - Vancouver Film School</a><br>
-          02:38<br>
-          From: <a href="#">VancouverFilmSchool</a>
+        <div class="director-item">
+          <img src="images/unknownthumbnail.jpg" alt="Director Video">
+          <a href="#">Builderman</a>
         </div>
-        <div class="item">
-          <img src="images/unknownthumbnail.jpg" alt="Director 3">
-          <a href="#">Intro to MacBook Pro</a><br>
-          14:22<br>
-          From: <a href="#">liminju</a>
+        <div class="director-item">
+          <img src="images/unknownthumbnail.jpg" alt="Director Video">
+          <a href="#">Clockwork</a>
         </div>
-        <div class="item">
-          <img src="images/unknownthumbnail.jpg" alt="Director 4">
-          <a href="#">This Day and Age - Slideshow</a><br>
-          03:34<br>
-          From: <a href="#">stkncheese</a>
+        <div class="director-item">
+          <img src="images/unknownthumbnail.jpg" alt="Director Video">
+          <a href="#">1dev2</a>
         </div>
       </div>
+
+      <div class="section-title">Featured Videos</div>
+
+      <div class="video-entry">
+        <img src="images/RobloxVideoThumbnail.png" alt="ROBLOX Trailer" />
+        <div class="info">
+          <h4><a href="watch-LTnMKjXEnMY.html">ROBLOX - Game Trailer</a></h4>
+          <p>ROBLOX is an online world for kids (and adults) who like to build, invent, compete and socialize.</p>
+          <div class="meta">From: Shedletsky • Views: 133,218</div>
+        </div>
+      </div>
+
+      <!-- Add more video entries below if needed -->
     </div>
   </div>
 
   <footer>
-    LegacyTube — Bringing you the golden age of online video.
+    LegacyTube — Built for the nostalgic video era.
   </footer>
+
 </body>
 </html>
