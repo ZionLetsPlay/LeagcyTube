@@ -169,3 +169,12 @@ ul li a {
   text-decoration: none;
   line-height: 1.2;
 }
+
+.video-entry .info h4 a {
+  color: #0033cc;
+  text-decoration: none;
+}
+
+.video-entry .info h4 a:hover {
+  text-decoration: underline;
+}
