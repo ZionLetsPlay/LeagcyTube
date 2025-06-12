@@ -16,11 +16,33 @@ header {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  position: relative;
 }
 
-header img {
+header a#logo-link {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+header a#logo-link img {
   height: 48px;
-  margin-right: 20px;
+}
+
+header a#logo-link::after {
+  content: "Home";
+  display: block;
+  position: absolute;
+  left: 55px;
+  top: 10px;
+  font-size: 10px;
+  color: #333;
+  display: none;
+}
+
+header a#logo-link:hover::after {
+  display: block;
 }
 
 #search-form {
@@ -151,6 +173,11 @@ ul li a {
   padding-bottom: 10px;
 }
 
+.director-section .item {
+  text-align: center;
+  width: 120px;
+}
+
 .director-section img {
   width: 100px;
   height: 75px;
@@ -162,6 +189,5 @@ ul li a {
   font-size: 11px;
   color: #0033cc;
   margin-top: 4px;
-  text-align: center;
   text-decoration: none;
 }
