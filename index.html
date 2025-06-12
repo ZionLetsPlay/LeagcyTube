@@ -1,64 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>YouTube - Broadcast Yourself</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>LegacyTube - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="wrapper">
+  <header>
+    <img src="images/old-logo.png" alt="LegacyTube" class="logo">
+    <h1>Welcome to LegacyTube</h1>
+  </header>
 
-    <header id="top-bar">
-      <img src="images/old-logo.png" alt="YouTube 2007" id="logo">
-      <form id="search-form">
-        <input type="text" placeholder="Search" />
-        <button type="submit">Search</button>
-      </form>
-    </header>
+  <main>
+    <h2>Featured Videos</h2>
+    <div class="video-grid">
+      <a href="videos/video1.html">
+        <img src="images/thumb1.jpg" alt="Video 1 Thumbnail">
+        <p>Cool Roblox Moments (2007)</p>
+      </a>
+      <a href="videos/video2.html">
+        <img src="images/thumb2.jpg" alt="Video 2 Thumbnail">
+        <p>Classic Tycoons Compilation</p>
+      </a>
+    </div>
+  </main>
 
-    <nav id="main-nav">
-      <a href="#">Videos</a>
-      <a href="#">Channels</a>
-      <a href="#">Community</a>
-    </nav>
-
-    <main id="content">
-      <div id="sidebar">
-        <h3>Categories</h3>
-        <ul>
-          <li><a href="#">Comedy</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">Gaming</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </div>
-
-      <div id="video-grid">
-        <div class="video-box">
-          <a href="video1.html">
-            <img src="images/thumb1.jpg" alt="Video Thumbnail">
-            <p class="video-title">Funny Cat Compilation</p>
-            <p class="video-meta">by CatLover • 1M views</p>
-          </a>
-        </div>
-
-        <div class="video-box">
-          <a href="video2.html">
-            <img src="images/thumb2.jpg" alt="Video Thumbnail">
-            <p class="video-title">Old School Roblox 2007</p>
-            <p class="video-meta">by RobloxFan07 • 320K views</p>
-          </a>
-        </div>
-
-        <!-- Add more video-box divs here -->
-      </div>
-    </main>
-
-    <footer>
-      <p>&copy; 2007 YouTube, LLC</p>
-    </footer>
-
-  </div>
+  <footer>
+    <p>&copy; 2007–2025 LegacyTube</p>
+  </footer>
 </body>
 </html>
