@@ -2,97 +2,68 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>LegacyTube - Classic Roblox Videos</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #ececec;
-      font-family: Arial, sans-serif;
-      color: #000;
-    }
-    header {
-      background-color: #cc0000;
-      color: white;
-      padding: 10px 20px;
-      font-size: 24px;
-    }
-    .container {
-      padding: 20px;
-      max-width: 960px;
-      margin: auto;
-    }
-    .video-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .video {
-      width: 300px;
-      background: white;
-      border: 1px solid #ccc;
-      padding: 10px;
-    }
-    iframe {
-      width: 100%;
-      height: 170px;
-    }
-    .title {
-      font-weight: bold;
-      margin-top: 8px;
-      font-size: 14px;
-    }
-    .year {
-      color: gray;
-      font-size: 12px;
-    }
-  </style>
+  <title>LegacyTube - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>LegacyTube</header>
+  <header>
+    <img src="images/old-logo.png" alt="LegacyTube Logo" />
+    <form id="search-form">
+      <input type="text" placeholder="Search videos">
+      <button type="submit">Search</button>
+    </form>
+  </header>
 
-<div class="container">
-  <h2>🎬 Classic Roblox Videos (2007–2010)</h2>
-  <div class="video-grid">
-    
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/8V1eXvxMQHk" frameborder="0" allowfullscreen></iframe>
-      <div class="title">Welcome to ROBLOX Building</div>
-      <div class="year">2007</div>
+  <nav>
+    <a href="#">Videos</a>
+    <a href="#">Categories</a>
+    <a href="#">Creators</a>
+    <a href="#">Community</a>
+    <a href="#">Upload</a>
+  </nav>
+
+  <div class="container">
+    <div id="sidebar">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">Gaming</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Skits</a></li>
+        <li><a href="#">Old Roblox</a></li>
+      </ul>
     </div>
 
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/I4A2IWTN1Jk" frameborder="0" allowfullscreen></iframe>
-      <div class="title">Roblox Trailer 2007</div>
-      <div class="year">2007</div>
-    </div>
+    <div id="main">
+      <div class="video-entry">
+        <img src="images/unknownthumbnail.jpg" alt="Thumbnail">
+        <div class="info">
+          <h4>Classic Obby Moments</h4>
+          <div class="meta">User: obbyfan • Views: 12,000</div>
+        </div>
+      </div>
 
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/EfKxv4DOaOQ" frameborder="0" allowfullscreen></iframe>
-      <div class="title">Roblox Obby – Lava Escape</div>
-      <div class="year">2008</div>
-    </div>
+      <div class="video-entry">
+        <img src="images/unknownthumbnail.jpg" alt="Thumbnail">
+        <div class="info">
+          <h4>2007 Roblox Tycoon Gameplay</h4>
+          <div class="meta">User: brickbuilder • Views: 9,800</div>
+        </div>
+      </div>
 
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/5lB14bdjMSs" frameborder="0" allowfullscreen></iframe>
-      <div class="title">Old Roblox HQ</div>
-      <div class="year">2009</div>
+      <div class="video-entry">
+        <img src="images/unknownthumbnail.jpg" alt="Thumbnail">
+        <div class="info">
+          <h4>Noob Battles Compilation</h4>
+          <div class="meta">User: robloxtime • Views: 17,450</div>
+        </div>
+      </div>
     </div>
-
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/G0eSpD-svBs" frameborder="0" allowfullscreen></iframe>
-      <div class="title">Noobs in Battle (Classic)</div>
-      <div class="year">2010</div>
-    </div>
-
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/ZnH-KoEpX2Y" frameborder="0" allowfullscreen></iframe>
-      <div class="title">ROBLOX 2006–2010 Compilation</div>
-      <div class="year">2010</div>
-    </div>
-
   </div>
-</div>
+
+  <footer>
+    LegacyTube Classic – Built for nostalgia and fun!
+  </footer>
 
 </body>
 </html>
