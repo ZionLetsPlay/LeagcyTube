@@ -178,3 +178,21 @@ ul li a {
 .video-entry .info h4 a:hover {
   text-decoration: underline;
 }
+
+.fake-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.fake-videos .video-entry {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.fake-videos .video-entry .info h4 a {
+  pointer-events: none;
+  color: #0033cc;
+  text-decoration: none;
+}
