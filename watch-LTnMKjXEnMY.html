@@ -5,73 +5,64 @@
   <title>ROBLOX - Game Trailer - LegacyTube</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .container {
-      display: flex;
-      max-width: 960px;
-      margin: 20px auto;
-    }
-    .main-content {
-      flex: 1;
-      margin-right: 20px;
-    }
-    .video-player-container video {
-      display: block;
+    .video-player-container {
       margin-bottom: 10px;
+    }
+    .rating-tools img {
+      width: 16px;
+      vertical-align: middle;
+    }
+    .rating-tools a {
+      margin-right: 10px;
     }
     .video-info-box {
       display: flex;
       gap: 20px;
-      margin-top: 10px;
-      background: #f6f6f6;
-      padding: 10px;
-      border: 1px solid #ccc;
+      margin: 15px 0;
+      font-size: 13px;
     }
-    .info-left img:first-child {
-      width: 90px;
-      height: 68px;
-      display: block;
-      margin-bottom: 5px;
-    }
-    .info-right input[type="text"] {
-      width: 100%;
-      margin-bottom: 5px;
-      font-size: 12px;
-    }
-    .rating-tools {
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    .rating-tools img {
-      height: 12px;
-      vertical-align: middle;
-    }
-    .video-responses {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .responder img {
-      width: 90px;
-      height: 68px;
-      display: block;
-    }
-    .responder a {
-      display: block;
+    .video-info-box .info-left {
       text-align: center;
-      font-size: 12px;
+      width: 150px;
     }
-    .director-section {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .item img {
+    .video-info-box .info-left img:first-child {
       width: 100px;
       height: 75px;
       display: block;
+      margin: 0 auto 5px;
     }
-    .item a {
+    .video-info-box .info-right input[type="text"] {
+      width: 100%;
+      margin-top: 4px;
+    }
+    .comments-responses .video-responses {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .comments-responses .responder {
+      text-align: center;
       font-size: 12px;
+    }
+    .comments-responses .responder img {
+      width: 80px;
+      height: 60px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .director-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .director-section .item {
+      width: 120px;
+      font-size: 11px;
+    }
+    .director-section .item img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #aaa;
     }
   </style>
 </head>
@@ -98,13 +89,31 @@
   </div>
 
   <div class="container">
-    <div class="main-content">
+    <div style="flex-grow: 1;">
       <h2>ROBLOX - Game Trailer</h2>
 
       <div class="video-player-container">
         <video width="425" height="350" controls poster="images/RobloxVideoThumbnail.png">
           <source src="videos/robloxgametrailer.mp4" type="video/mp4">
         </video>
+      </div>
+
+      <div class="rating-tools">
+        <span>Rate this video:</span>
+        <img src="images/star_0.png" alt="Star">
+        <img src="images/star_0.png" alt="Star">
+        <img src="images/star_0.png" alt="Star">
+        <img src="images/star_0.png" alt="Star">
+        <img src="images/star_0.png" alt="Star">
+        <img src="images/heart.png" alt="Favorites Icon"> <a href="#">Save to Favorites</a>
+        <img src="images/groups.png" alt="Groups Icon"> <a href="#">Add to Groups</a>
+        <img src="images/email.png" alt="Share Icon"> <a href="#">Share Video</a>
+        <img src="images/post.png" alt="Post Icon"> <a href="#">Post Video</a>
+        <img src="images/flag-as-bad-stuff.png" alt="Flag Icon"> <a href="#">Flag as Inappropriate</a>
+      </div>
+
+      <div class="meta" style="font-size: 12px; margin-top: 5px;">
+        Views: <strong>133,218</strong> | Comments: <strong>0</strong> | Favorites: <strong>0</strong>
       </div>
 
       <div class="video-info-box">
@@ -123,24 +132,6 @@
           <strong>Embed:</strong><br>
           <input type="text" value="&lt;embed src='https://www.leagcytube.com/embed/LTnMKjXEnMY' width='425' height='350'&gt;" readonly>
         </div>
-      </div>
-
-      <div class="rating-tools">
-        <span>Rate this video:</span>
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/star_0.png" alt="Star">
-        <img src="images/heart.png" alt="Favorites Icon"> <a href="#">Save to Favorites</a>
-        <img src="images/groups.png" alt="Groups Icon"> <a href="#">Add to Groups</a>
-        <img src="images/email.png" alt="Share Icon"> <a href="#">Share Video</a>
-        <img src="images/post.png" alt="Post Icon"> <a href="#">Post Video</a>
-        <img src="images/flag-as-bad-stuff.png" alt="Flag Icon"> <a href="#">Flag as Inappropriate</a>
-      </div>
-
-      <div class="meta" style="font-size: 12px;">
-        Views: <strong>133,218</strong> | Comments: <strong>0</strong> | Favorites: <strong>0</strong>
       </div>
 
       <div class="comments-responses">
