@@ -121,9 +121,10 @@ body {
 }
 
 .video-entry .info .meta img {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   vertical-align: middle;
+  margin-right: 1px;
 }
 
 footer {
