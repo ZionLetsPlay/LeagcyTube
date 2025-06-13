@@ -2,98 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>LegacyTube - Home</title>
+  <title>ROBLOX - Game Trailer</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .director-section {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    .director-item {
-      width: 120px;
-      text-align: center;
-      font-size: 11px;
-    }
-    .director-item img {
-      width: 100px;
-      height: 75px;
-      border: 1px solid #aaa;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="topbar-top">
-      <a href="index.html">
-        <img src="images/old-logo.png" alt="LegacyTube Logo" class="logo" />
-      </a>
-      <form class="topbar-search">
-        <input type="text" placeholder="Search" />
-        <button type="submit">Search</button>
-      </form>
+  <div class="video-container">
+    <h2>ROBLOX - Game Trailer</h2>
+    <video id="video" width="640" height="360" controls poster="images/RobloxVideoThumbnail.png">
+      <source src="videos/robloxgametrailer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="video-details">
+      <p><strong>Added:</strong> Nov 10, 2006</p>
+      <p><strong>From:</strong> Shedletsky</p>
+      <p><strong>Category:</strong> Video Games</p>
+      <p><strong>Tags:</strong> roblox, trailer, game</p>
+      <p><strong>URL:</strong> <a href="#">https://zionletsplay.github.io/LeagcyTube/watch-LTnMKjXEnMY.html</a></p>
+      <p><strong>Embed:</strong> [Embed code here]</p>
+      <button class="subscribe-button">Subscribe</button>
     </div>
-    <div class="nav-buttons">
-      <img src="images/videos-button.png" alt="Videos" />
-      <img src="images/categories-button.png" alt="Categories" />
-      <img src="images/channels-button.png" alt="Channels" />
-      <img src="images/community-button.png" alt="Community" />
-      <span class="upload-button">
-        <img src="images/upload-button.png" alt="Upload" />
-      </span>
+
+    <div class="video-actions">
+      <img src="images/star_0.png" alt="0 stars" class="icon" />
+      <button><img src="images/heart.png" alt="Favorites" class="icon" /> Save to Favorites</button>
+      <button><img src="images/groups.png" alt="Groups" class="icon" /> Add to Groups</button>
+      <button><img src="images/email.png" alt="Share" class="icon" /> Share Video</button>
+      <button><img src="images/post.png" alt="Post" class="icon" /> Post Video</button>
+      <button><img src="images/flag-as-bad-stuff.png" alt="Flag" class="icon" /> Flag as Inappropriate</button>
+    </div>
+
+    <div class="comments-section">
+      <h3>Comments & Responses</h3>
+      <div class="comment">
+        <img src="images/user1.png" alt="User1" class="user-icon" />
+        <p><strong>User1:</strong> This brings back memories!</p>
+      </div>
+      <div class="comment">
+        <img src="images/user2.png" alt="User2" class="user-icon" />
+        <p><strong>User2:</strong> I used to play this all the time.</p>
+      </div>
+      <!-- Add more comments as needed -->
     </div>
   </div>
-
-  <div class="container">
-    <div id="sidebar">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Terms</a></li>
-      </ul>
-    </div>
-
-    <div id="main">
-      <div class="section-title">Director Videos</div>
-      <div class="director-section">
-        <div class="director-item">
-          <img src="images/unknownthumbnail.jpg" alt="Director Video">
-          <a href="#">DramaStudio</a>
-        </div>
-        <div class="director-item">
-          <img src="images/unknownthumbnail.jpg" alt="Director Video">
-          <a href="#">Builderman</a>
-        </div>
-        <div class="director-item">
-          <img src="images/unknownthumbnail.jpg" alt="Director Video">
-          <a href="#">Clockwork</a>
-        </div>
-        <div class="director-item">
-          <img src="images/unknownthumbnail.jpg" alt="Director Video">
-          <a href="#">1dev2</a>
-        </div>
-      </div>
-
-      <div class="section-title">Featured Videos</div>
-
-      <div class="video-entry">
-        <img src="images/RobloxVideoThumbnail.png" alt="ROBLOX Trailer" />
-        <div class="info">
-          <h4><a href="watch-LTnMKjXEnMY.html">ROBLOX - Game Trailer</a></h4>
-          <p>ROBLOX is an online world for kids (and adults) who like to build, invent, compete and socialize.</p>
-          <div class="meta">From: Shedletsky • Views: 133,218</div>
-        </div>
-      </div>
-
-      <!-- Add more video entries below if needed -->
-    </div>
-  </div>
-
-  <footer>
-    LegacyTube — Built for the nostalgic video era.
-  </footer>
 
 </body>
 </html>
